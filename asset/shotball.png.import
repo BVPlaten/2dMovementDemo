@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shotball.png-e30fb3cad662d08e0e742cdd49665fd0.stex"
+path="res://.import/shotball.png-fabd6540f4cb65012b97cd58e4b0e330.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://shotball.png"
-dest_files=[ "res://.import/shotball.png-e30fb3cad662d08e0e742cdd49665fd0.stex" ]
+source_file="res://asset/shotball.png"
+dest_files=[ "res://.import/shotball.png-fabd6540f4cb65012b97cd58e4b0e330.stex" ]
 
 [params]
 

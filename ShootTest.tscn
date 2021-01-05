@@ -8,6 +8,7 @@
 script = ExtResource( 3 )
 
 [node name="RotateAndMove" parent="." instance=ExtResource( 1 )]
-position = Vector2( 183.488, 188.71 )
+position = Vector2( 351.488, 224.71 )
 
 [node name="Shuss" parent="." instance=ExtResource( 2 )]
+position = Vector2( 348.802, 131.364 )

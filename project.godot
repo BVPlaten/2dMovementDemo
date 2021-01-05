@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="2D Movement Demo"
 run/main_scene="res://ShootTest.tscn"
-config/icon="res://icon.png"
+config/icon="res://asset/icon.png"
 
 [input]
 

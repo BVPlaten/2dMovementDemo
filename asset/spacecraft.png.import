@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spacecraft.png-335ebc0a69809a577c3bd1341a075445.stex"
+path="res://.import/spacecraft.png-9f9652e64d5219168295810e5545b05a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spacecraft.png"
-dest_files=[ "res://.import/spacecraft.png-335ebc0a69809a577c3bd1341a075445.stex" ]
+source_file="res://asset/spacecraft.png"
+dest_files=[ "res://.import/spacecraft.png-9f9652e64d5219168295810e5545b05a.stex" ]
 
 [params]
 

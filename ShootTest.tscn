@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://RotateAndMove.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Shuss.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ShootTest.gd" type="Script" id=3]
+
+[node name="ShootTest" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="RotateAndMove" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183.488, 188.71 )
+
+[node name="Shuss" parent="." instance=ExtResource( 2 )]

@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://new_dynamicfont.tres" type="DynamicFont" id=1]
+
+[node name="ZweifachAnzeige" type="HBoxContainer"]
+margin_right = 154.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 250, 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Key" type="Label" parent="."]
+margin_right = 90.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 80, 20 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "KEY"
+autowrap = true
+
+[node name="Value1" type="Label" parent="."]
+margin_left = 94.0
+margin_right = 184.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 75, 20 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "1. VALUE"
+autowrap = true
+
+[node name="Value2" type="Label" parent="."]
+margin_left = 188.0
+margin_right = 278.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 75, 20 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "2. VALUE"
+autowrap = true

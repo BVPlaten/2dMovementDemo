@@ -27,6 +27,7 @@ func show_info():
 func get_input():
 	if Input.is_action_pressed('fire'):
 		$Shuss.global_position = $RotateAndMove.global_position 
+		$Shuss.rotation_degrees = $RotateAndMove.rotation_degrees 
 
 # get gemoetry data and put it on the screen
 func get_geom():

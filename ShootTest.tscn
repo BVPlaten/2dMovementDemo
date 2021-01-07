@@ -17,11 +17,13 @@ position = Vector2( 348.802, 131.364 )
 
 [node name="SchiffAnzeige" parent="." instance=ExtResource( 4 )]
 margin_right = 233.0
+script = null
 
 [node name="SchussAnzeige" parent="." instance=ExtResource( 4 )]
 margin_top = 21.0
 margin_right = 233.0
 margin_bottom = 41.0
+script = null
 
 [node name="SchiffWinkelAnzeige" parent="." instance=ExtResource( 5 )]
 margin_top = 42.0

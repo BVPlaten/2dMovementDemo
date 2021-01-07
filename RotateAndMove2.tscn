@@ -3,7 +3,6 @@
 [ext_resource path="res://RotateAndMove2.gd" type="Script" id=1]
 [ext_resource path="res://asset/icon.png" type="Texture" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 30.2192, 30.771 )
 

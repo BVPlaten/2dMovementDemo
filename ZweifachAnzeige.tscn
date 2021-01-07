@@ -1,17 +1,19 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ZweifachAnzeige.gd" type="Script" id=2]
 
 [node name="ZweifachAnzeige" type="HBoxContainer"]
 margin_right = 154.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 250, 20 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Key" type="Label" parent="."]
-margin_right = 90.0
+margin_right = 80.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 80, 20 )
 size_flags_horizontal = 3
@@ -22,8 +24,8 @@ text = "KEY"
 autowrap = true
 
 [node name="Value1" type="Label" parent="."]
-margin_left = 94.0
-margin_right = 184.0
+margin_left = 84.0
+margin_right = 165.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 75, 20 )
 size_flags_horizontal = 3
@@ -34,8 +36,8 @@ text = "1. VALUE"
 autowrap = true
 
 [node name="Value2" type="Label" parent="."]
-margin_left = 188.0
-margin_right = 278.0
+margin_left = 169.0
+margin_right = 250.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 75, 20 )
 size_flags_horizontal = 3

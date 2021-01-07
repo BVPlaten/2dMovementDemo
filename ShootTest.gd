@@ -1,12 +1,9 @@
 extends Node2D
 
-var ship
-var shoot
-var showShipPos
-var showFirePos
-var showShipRot
-var showFireRot
-
+var speed = 200
+var rotation_speed = 1.5
+var velocity = Vector2.ZERO
+var rotation_dir = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,16 +23,22 @@ func show_info():
 
 func get_input():
 	if Input.is_action_pressed('fire'):
-		$Shuss.global_position = $RotateAndMove.global_position 
+		var posShip = $RotateAndMove.global_position
+		posShip.y = posShip.y + 50
+		#$Shuss.global_position = $RotateAndMove.global_position
+		$Shuss.global_position = posShip
 		$Shuss.rotation_degrees = $RotateAndMove.rotation_degrees 
-
-# get gemoetry data and put it on the screen
-func get_geom():
-	pass
+		return true
+	return false
+	
 	
 func _physics_process(delta):
-	get_input()
+	var shouldMove = get_input()
 	show_info()
+	#if shouldMove == true:
+	#	velocity += $Shuss.transform.x * speed
+	#	velocity = $Shuss.move_and_slide(velocity)
+		
 	
 
 

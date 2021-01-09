@@ -7,7 +7,7 @@ var rotation_dir = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	show_info()
+	pass
 	
 func show_info():
 	$SchiffPos/Key.text = "SHIP POS:"
@@ -29,8 +29,7 @@ func show_info():
 
 func get_input():
 	if Input.is_action_pressed('fire'):
-		$Shuss.global_position = $RotateAndMove.global_position
-		$Shuss.rotation_degrees = $RotateAndMove.rotation_degrees 
+		$Shuss.fire_it($RotateAndMove)
 		return true
 	return false
 	

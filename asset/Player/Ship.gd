@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 export (int) var speed = 330
-export (float) var rot_speed = 3
+export (float) var rot_speed = 7
 
 var velocity = Vector2()
 var rot_dir = 0
@@ -20,5 +20,5 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
-	rotation += rot_dir * rot_speed * delta
+	rotation += rot_dir * delta * rot_speed
 	move_and_slide(velocity)

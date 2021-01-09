@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spacecraft.png-9f9652e64d5219168295810e5545b05a.stex"
+path="res://.import/the_flower_with_a_duckface.png-035032bf17f89c4244eb5bc8e30aaa60.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/spacecraft.png"
-dest_files=[ "res://.import/spacecraft.png-9f9652e64d5219168295810e5545b05a.stex" ]
+source_file="res://asset/Enemy/the_flower_with_a_duckface.png"
+dest_files=[ "res://.import/the_flower_with_a_duckface.png-035032bf17f89c4244eb5bc8e30aaa60.stex" ]
 
 [params]
 

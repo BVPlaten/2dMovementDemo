@@ -10,12 +10,18 @@ func _ready():
 	show_info()
 	
 func show_info():
-	$SchiffAnzeige/Key.text = "Schiff"
-	$SchiffAnzeige/Value1.text = str($RotateAndMove.global_position.x)
-	$SchiffAnzeige/Value2.text = str($RotateAndMove.global_position.y)
-	$SchussAnzeige/Key.text = "Schuss"
-	$SchussAnzeige/Value1.text = str($Shuss.global_position.x)
-	$SchussAnzeige/Value2.text = str($Shuss.global_position.y)
+	$SchiffPos/Key.text = "SHIP POS:"
+	$SchiffPos/Value1.text = str($RotateAndMove.global_position.x)
+	$SchiffPos/Value2.text = str($RotateAndMove.global_position.y)
+	$SchiffScale/Key.text = "SHIP SCALE:"
+	$SchiffScale/Value1.text = str($RotateAndMove.scale.x)
+	$SchiffScale/Value2.text = str($RotateAndMove.scale.y)
+	$SchussPos/Key.text = "BALL POS."
+	$SchussPos/Value1.text = str($Shuss.global_position.x)
+	$SchussPos/Value2.text = str($Shuss.global_position.y)
+	$SchussScale/Key.text = "BALL SCALE"
+	$SchussScale/Value1.text = str($Shuss.global_scale.x)
+	$SchussScale/Value2.text = str($Shuss.global_scale.y)
 	$SchiffWinkelAnzeige/Key.text = "Winkel Schiff ° "
 	$SchiffWinkelAnzeige/Value.text = str($RotateAndMove.rotation_degrees)
 	$SchussWinkelAnzeige/Key.text = "Winkel Schuss ° "
@@ -23,10 +29,7 @@ func show_info():
 
 func get_input():
 	if Input.is_action_pressed('fire'):
-		var posShip = $RotateAndMove.global_position
-		posShip.y = posShip.y + 50
-		#$Shuss.global_position = $RotateAndMove.global_position
-		$Shuss.global_position = posShip
+		$Shuss.global_position = $RotateAndMove.global_position
 		$Shuss.rotation_degrees = $RotateAndMove.rotation_degrees 
 		return true
 	return false
